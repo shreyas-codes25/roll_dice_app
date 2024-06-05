@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'basic.dart';
+import 'gradient_container.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  List<Color> colors = [
+    Colors.deepPurple,
+    Colors.yellow
+  ];
+  runApp( MaterialApp(
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
-      home: Basic()));
+      home: GradientContainer(colors: colors),));
 }
 
